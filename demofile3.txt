@@ -1,0 +1,1 @@
+the average of the filtered list was: 29.0 and the sum of the filtered list was 87
