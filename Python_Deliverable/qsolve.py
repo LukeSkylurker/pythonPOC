@@ -7,7 +7,8 @@ wb2 = openpyxl.load_workbook('output.xlsx')
 ws2 = wb2.active
 
 num_row = 1
-
+headers = ['-','Description','ItemNum','UPC Number','Category','Category description','Qty','Retail per item', 'liquidation rate','liquidation price']
+ws2.append(headers)
 for row in ws1:
     for cell in row:
         if cell.value == "MENS APPAREL" or cell.value == "LADIES APPAREL" or cell.value == "CHILDRENS APPAREL":
